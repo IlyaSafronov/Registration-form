@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+:root {
+  --primary-color: #3498db;
+  --input-height: 55px;
+}
+
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#signup {
+  display: none;
+}
+
+/* ! Global Styles  */
+h1 {
+  font-weight: 300;
+  color: #343434;
+  margin: 0.5rem 0;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+
+/* ! Colors */
+.gray {
+  color: rgb(124, 124, 124);
+}
+
+.fa-twitter {
+  color: var(--primary-color);
+}
+
+.fa-google {
+  color: #dd4b39;
+}
+
+/* ! Registration form  */
+.registration-form {
+  width: 600px;
+  border: 2px solid #ccc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+              rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  text-align: center;  
+  font-size: 1.25rem;          
+}
+
+.registration-form .header {
+  display: flex;
+}
+
+.body {
+  padding: 2rem 1rem;
+}
+
+.bar {
+  position: relative;
+  margin: 2.5rem 0;
+  border-top: 1px solid #ccc;
+}
+
+.bar::before {
+  content: 'or';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -54%);
+  padding: 0 1rem;
+  background-color: #fff;
+}
+
+/* !Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+}
+
+.btn-tab {
+  width: 50%;
+  padding: 2rem 1rem;
+  font-size: 1.25rem;
+}
+
+.btn-tab.active {
+  border-top: 3px solid var(--primary-color);
+  background-color: #fff;
+}
+
+.btn-oauth {
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  color: rgb(92, 92, 92);
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+              rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
