@@ -11,11 +11,11 @@
 
   <div class="registration-form">
     <div class="header">
-      <button class=" btn btn-tab active">SIGN IN</button>
-      <button class=" btn btn-tab">SIGN UP</button>
+      <button class=" btn btn-tab btn-ripple active"data-target-tab="#signin">SIGN IN</button>
+      <button class=" btn btn-tab btn-ripple"data-target-tab="#signup">SIGN UP</button>
     </div>
     <div class="body">
-     <div class="content" id="signin">
+     <div class="content active" id="signin">
       <h1>Sign in to your account</h1>
       <p class="gray">
         Sign in to access all free resources
@@ -49,44 +49,40 @@
       </form>
      </div>
      <div class="content" id="signup">
-      <div class="content" id="signup">
-        <h1>REGISTER</h1>
-        <p class="gray">
-          You can use this account to log in to any of our products
-        </p>
-        <div class="flex justify-between">
-          <button class="btn btn-oauth">
-            <i class="fab fa-google"></i>Sign up with Google
-          </button>
-          <button class="btn btn-oauth">
-            <i class="fab fa-twitter"></i>Sign up with Twitter
-          </button>
-        </div>
-  
-        <div class="bar"></div>
-        <form action="#">
-          <div class="input-group">
-            <input type="text" name="" id="name" class="element">
-            <label for="name">Name</label>
-          </div>
-          <div class="input-group">
-            <input type="email" name="" id="email" class="element">
-            <label for="email">Email</label>
-          </div>
-          <div class="input-group">
-            <input type="password" name="" id="password" class="element">
-            <label for="password">Password</label>
-            <i class="fas fa-eye-slash eye"></i>
-          </div>
-          <div class="agreements">
-            <input type="checkbox" name="" id="terms">
-            <label for="terms" class="gray">Agree to our conditions</label>
-          </div>
-          <button class="btn btn-register">Sign Up</button>
-        </form>
-       </div>
-      
+      <h1>REGISTER</h1>
+      <p class="gray">
+        You can use this account to log in to any of our products
+      </p>
+      <div class="flex justify-between">
+        <button class="btn btn-oauth">
+          <i class="fab fa-google"></i>Sign up with Google
+        </button>
+        <button class="btn btn-oauth">
+          <i class="fab fa-twitter"></i>Sign up with Twitter
+        </button>
+      </div>
 
+      <div class="bar"></div>
+      <form action="#">
+        <div class="input-group">
+          <input type="text" name="" id="name" class="input-elem" placeholder=" " autocomplete="off">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" name="" id="email" class="input-elem" placeholder=" " autocomplete="off">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" name="" id="password" class="input-elem" placeholder=" " autocomplete="off">
+          <label for="password">Password</label>
+          <i class="fas fa-eye-slash eye"></i>
+        </div>
+        <div class="agreements">
+          <input type="checkbox" name="" id="terms">
+          <label for="terms" class="gray">Agree to our conditions</label>
+        </div>
+        <button class="btn btn-register">Sign Up</button>
+      </form>
      </div>
     </div>
   </div>
