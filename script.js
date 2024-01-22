@@ -12,5 +12,29 @@ tab_btns.forEach((btn) => {
   });
 });
 
-// ! btn-ripple
+// ! ripple effect
+const ripple_btns = document.querySelectorAll('.btn-ripple');
+ripple_btns.forEach((btn) => {
+  btn.addEventListener('click', function(e) {
+    let x_coord = e.clientX;
+    let y_coord = e.clientY;
+
+    let btn_pos_top = e.target.offsetTop;
+    let btn_pos_left = e.target.offsetLeft;
+
+    let x = x_coord - btn_pos_left;
+    let y = y_coord - btn_pos_top;
+
+    const span = document.createElement('span');
+    span.classList.add('ripple');
+    span.style.top = `$(y)px`;
+    span.style.left = `$(x)px`;
+
+    this.appendChild(span);
+    
+    setTimeout(() => {
+      this.removeChild(span);
+    }, 400);
+  });
+});
 
