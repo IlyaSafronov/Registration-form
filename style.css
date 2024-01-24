@@ -136,6 +136,8 @@ input[type=checkbox] {
   left: 1rem;
   padding: 0 0.5rem;
   transition: all 0.2s ease-in-out;
+  user-select: none;
+  pointer-events: none;
 }
 
 .input-group .input-elem:focus {
@@ -246,4 +248,21 @@ input[type=checkbox] {
 
 .btn-register:hover {
   background-color: var(--primary-color-hover);
+}
+
+
+/* ! responsive design */
+@media screen and (max-width: 768px) {
+  .registration-form {
+    width: 340px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .btn-oauth {
+    margin-bottom: 0.5rem;
+  }
+  .btn-tab {
+    padding: 1rem;
+  }
 }

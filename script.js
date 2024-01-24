@@ -38,3 +38,18 @@ ripple_btns.forEach((btn) => {
   });
 });
 
+// ! Show and hide the password
+const reg_eyes = document.querySelectorAll('.eye');
+
+reg_eyes.forEach((eye) => {
+  eye.addEventListener("click", () => {
+    const pass_field = eye.previousElementSibling.previousElementSibling;
+    if (pass_field.type === "password") {
+      pass_field.setAttribute("type", "text");
+      eye.classList.replace("fa-eye-slash", "fa-eye");
+    } else {
+      pass_field.setAttribute("type", "password");
+      eye.classList.replace("fa-eye", "fa-eye-slash");
+    }
+  });
+});
